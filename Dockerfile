@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+MAINTAINER D.Ducatel
 
 RUN apt-get update && \
 	apt-get install -y openssh-server gdb gdbserver sudo build-essential git && \
@@ -8,8 +9,8 @@ RUN apt-get update && \
 	sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd && \
 	apt-get clean
 
-	VOLUME /usr/src
-	WORKDIR /usr/src
+VOLUME /usr/src
+WORKDIR /usr/src
 
-	EXPOSE 22
-	CMD ["/usr/sbin/sshd", "-D"]
+EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D"]

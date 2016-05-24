@@ -13,7 +13,7 @@ The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs
 
 So to launch the build box, execute this command on your linux docker host
  ```sh
-docker run -d -p 12345:22 visual-studio-build-box
+docker run -d -p 12345:22 visual-studio-linux-build-box
  ```
 
 ### How connect to your Visual Studio
@@ -36,7 +36,7 @@ For example, the mongo-c driver
 
 ````Dockerfile
 
-FROM visual-studio-build-box
+FROM visual-studio-linux-build-box
 
 RUN apt-get update && \
     apt-get install -y libxml2-dev pkg-config libssl-dev libsasl2-dev automake autoconf libtool && \
