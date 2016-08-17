@@ -4,6 +4,7 @@ This image is used to allows Visual Studio to build a Linux application.
 The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/).
 
  ## How to use it
+ 
  ### How launch the build box
 
  The image expose an SSH server on port 22. The credential is:
@@ -13,7 +14,7 @@ The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs
 
 So to launch the build box, execute this command on your linux docker host
  ```sh
-docker run -d -p 12345:22 visual-studio-linux-build-box
+ docker run -d -p 12345:22 --security-opt seccomp:unconfined visual-studio-linux-build-box
  ```
 
 ### How connect to your Visual Studio
