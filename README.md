@@ -14,7 +14,7 @@ The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs
 
 So to launch the build box, execute this command on your linux docker host
  ```sh
- docker run -d -p 12345:22 --security-opt seccomp:unconfined visual-studio-linux-build-box
+ docker run -d -p 12345:22 --security-opt seccomp:unconfined ducatel/visual-studio-linux-build-box
  ```
 
 ### How connect to your Visual Studio
@@ -35,9 +35,8 @@ You can extends the build image to include some dependencies.
 
 For example, the mongo-c driver
 
-````Dockerfile
-
-FROM visual-studio-linux-build-box
+```Dockerfile
+FROM ducatel/visual-studio-linux-build-box
 
 RUN apt-get update && \
     apt-get install -y libxml2-dev pkg-config libssl-dev libsasl2-dev automake autoconf libtool && \
@@ -46,5 +45,4 @@ RUN apt-get update && \
     git checkout 1.3.5 && \
     ./autogen.sh && \
     make && make install
-
 ```
