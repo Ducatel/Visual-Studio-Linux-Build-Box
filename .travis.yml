@@ -1,0 +1,4 @@
+language: bash
+
+script:
+  - 'curl -H "Content-Type: application/json" --data "{\"build\": true}" -X POST https://registry.hub.docker.com/u/ducatel/visual-studio-linux-build-box/trigger/02aaccdb-1eca-4e49-9c6f-e9c67a94a471/'
