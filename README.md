@@ -3,7 +3,12 @@
 This image is used to allows Visual Studio to build a Linux application.
 The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/).
 
- ## How to use it
+## Version
+
+* Ubuntu 18.04 -> `ducatel/visual-studio-linux-build-box:18.04`, `ducatel/visual-studio-linux-build-box:latest`
+* Ubuntu 16.04 -> `ducatel/visual-studio-linux-build-box:16.04`
+
+## How to use it
  
  ### How launch the build box
 
