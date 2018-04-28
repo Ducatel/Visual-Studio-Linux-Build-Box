@@ -1,5 +1,9 @@
 # Visual Studio Linux Build Box
 
+[![Docker Build Status](https://img.shields.io/docker/build/ducatel/visual-studio-linux-build-box.svg)](https://hub.docker.com/r/ducatel/visual-studio-linux-build-box/) 
+[![Docker Stars](https://img.shields.io/docker/stars/ducatel/visual-studio-linux-build-box.svg)](https://hub.docker.com/r/ducatel/visual-studio-linux-build-box/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ducatel/visual-studio-linux-build-box.svg)](https://hub.docker.com/r/ducatel/visual-studio-linux-build-box/)
+
 This image is used to allows Visual Studio to build a Linux application.
 The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/).
 
