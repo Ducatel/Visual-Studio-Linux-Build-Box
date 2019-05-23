@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER D.Ducatel
 
 RUN apt-get update && \
-	apt-get install -y openssh-server gdb gdbserver sudo build-essential git && \
+	apt-get install -y openssh-server gdb gdbserver sudo build-essential git zip && \
 	mkdir /var/run/sshd && \
 	echo 'root:toor' | chpasswd && \
 	sed -i -E 's/#\s*PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
