@@ -9,8 +9,15 @@ The official Microsoft tutorial [Visual C++ for Linux Development](https://blogs
 
 ## Version
 
+### From docker hub
+
 * Ubuntu 18.04 -> `ducatel/visual-studio-linux-build-box:18.04`, `ducatel/visual-studio-linux-build-box:latest`
 * Ubuntu 16.04 -> `ducatel/visual-studio-linux-build-box:16.04`
+
+### From github registry
+
+* Ubuntu 18.04 -> `docker pull docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:18.04`
+* Ubuntu 16.04 -> `docker pull docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:16.04
 
 ## How to use it
  
