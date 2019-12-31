@@ -18,14 +18,14 @@ jobs:
     - name: Login to github docker registry
       run: docker login -u Ducatel -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
     - name: Build the latest image
-      run: docker build --file Dockerfile --tag Ducatel/visual-studio-linux-build-box/vs-linux-build-box:latest .
+      run: docker build --file Dockerfile --tag docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:latest .
     - name: Push latest image
-      run: docker push docker.pkg.github.com/Ducatel/visual-studio-linux-build-box/vs-linux-build-box:latest
+      run: docker push docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:latest
     - name: Build the image with ubuntu 18.04
-      run: docker build --file Dockerfile --tag Ducatel/visual-studio-linux-build-box/vs-linux-build-box:18.04 .
+      run: docker build --file Dockerfile --tag docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:18.04 .
     - name: Push 18.04 image
-      run: docker push docker.pkg.github.com/Ducatel/visual-studio-linux-build-box/vs-linux-build-box:18.04
+      run: docker push docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:18.04
     - name: Build the image with ubuntu 16.04
-      run: docker build --file ubuntu1604-Dockerfile --tag Ducatel/visual-studio-linux-build-box/vs-linux-build-box:16.04 .
+      run: docker build --file ubuntu1604-Dockerfile --tag docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:16.04 .
     - name: Push 16.04 image
-      run: docker push docker.pkg.github.com/Ducatel/visual-studio-linux-build-box/vs-linux-build-box:16.04
+      run: docker push docker.pkg.github.com/ducatel/visual-studio-linux-build-box/vs-linux-build-box:16.04
